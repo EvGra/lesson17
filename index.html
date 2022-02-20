@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="firstInput">
+    <div>
+      <p>Имя</p>
+      <input type="text" class="name">
+    </div>
+    <div>
+      <p>Фамилия</p>
+      <input type="text" class="secondName">
+    </div>
+    <div>
+      <p>Возраст</p>
+      <input type="number" class="age">
+    </div>
+    <div>
+      <p>Дата приема на работу</p>
+      <input type="text" class="date">
+    </div>
+    <div>
+      <p>Профессия</p>
+      <select name="work" id="select">
+        <option value="" selected>Профессия</option>
+        <option value="repair">Слесарь</option>
+        <option value="driver">Водитель</option>
+      </select>
+    </div>
+  </div>
+  <div style="display: none;" class="repair block">
+    <div>
+      <p>Разряд</p>
+      <input type="number" class="rank">
+    </div>
+    <div>
+      <p>Дети</p>
+      <input type="checkbox" class="children">
+    </div>
+  </div>
+  <div style="display: none;" class="driver block">
+    <div>
+      <p>Машина</p>
+      <input type="text" class="position">
+    </div>
+    <div>
+      <p>Дети</p>
+      <input type="checkbox" class="children">
+    </div>
+  </div>
+  <button class="saveBtn">Сохранить</button>
+  <div class="divTable">
+    <div class="divTableBody">
+      <div class="divTableRow">
+        <div class="divTableCell">Имя</div>
+        <div class="divTableCell">Фамилия</div>
+        <div class="divTableCell">Возраст</div>
+        <div class="divTableCell">Дата приема на работу</div>
+        <div class="divTableCell">Профессия</div>
+        <div class="divTableCell">Разряд</div>
+        <div class="divTableCell">Машина</div>
+        <div class="divTableCell">Есть дети?</div>
+      </div>
+    </div>
+    <div class="divTableRow divTableWorker">
+    </div>
+  </div>
+</body>
+</html>
